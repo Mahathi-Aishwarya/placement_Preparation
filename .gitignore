@@ -1,0 +1,16 @@
+# OS and sync noise
+Thumbs.db
+desktop.ini
+.DS_Store
+~$*
+*.tmp
+
+# Local tooling
+.claude/
+
+# Personal notes, plans and corrections stay on this computer only
+personal/
+PLACEMENT-ROADMAP.md
+
+# Private answer keys must never be committed
+*key*.md
