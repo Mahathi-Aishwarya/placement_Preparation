@@ -170,3 +170,88 @@ An absolute path starts at `/` and works from anywhere. A relative path starts f
 
 ---
 
+## 13. Extra basics you need from day one (so nothing is missed)
+
+**Finding out about your system**
+
+| Command | What it shows |
+|---|---|
+| `whoami` | Your user name |
+| `hostname` | The computer's name |
+| `date` | Current date and time |
+| `uname -s` | Kernel name (prints `Linux`); `uname -m` prints the architecture (`x86_64`); `uname -a` prints everything |
+| `echo $HOME` | Your home path. `$HOME` is an **environment variable** |
+| `which python3` | Where a program lives (`/usr/bin/python3`) |
+| `history` | List of commands you typed before. Run `!!` to repeat the last one |
+| `clear` or Ctrl+L | Clear the screen |
+| `exit` or Ctrl+D | Leave the shell |
+| `cd` (with nothing after it) | Go to your home folder |
+| `cd -` | Go back to the previous folder |
+
+**Getting help (you are never stuck in Linux):** `man ls` opens the manual (press `q` to quit, `/word` to search). `ls --help` prints a short summary. `type cd` tells you whether a command is built in.
+
+**Chaining commands**
+
+| Operator | Meaning | Example |
+|---|---|---|
+| `;` | Run the next command no matter what | `echo one; echo two` |
+| `&&` | Run the next only if the previous **succeeded** | `mkdir backup && echo created` |
+| `\|\|` | Run the next only if the previous **failed** | `false \|\| echo "it failed"` |
+
+Verified in your Ubuntu: `true && echo A` prints `A`. `false && echo B` prints nothing. `false || echo C` prints `C`. Running `mkdir x1` twice succeeds the first time and fails the second time, because the folder already exists.
+
+**Brace expansion (create many things at once):** `mkdir -p project/{src,docs,logs}` creates three folders. `ls project` then prints `docs logs src`.
+
+**Hidden files:** any name that starts with `.` is hidden. `ls` skips them, `ls -a` shows them, along with `.` (here) and `..` (parent). Configuration files such as `.bashrc` are hidden files.
+
+**Overwrite vs append (verified):** `echo a > f.txt` then `echo b > f.txt` leaves only `b`. After `echo c >> f.txt`, the file has `b` and `c`. `wc -l < f.txt` counts lines and prints `2`.
+
+**Note:** in a terminal, `ls` prints names in columns. When its output goes through a pipe, it prints one name per line.
+
+## 14. Questions that repeat in technical interviews (Linux basics)
+
+> Honest note: these are the most common fresher questions for system engineer, cloud support and infrastructure roles. Companies don't publish their question sets, so treat this as a strong pattern, not a leaked list. **Practise saying each answer aloud in 30 to 45 seconds**, then read the model answer.
+
+1. **What is Linux? Is it Unix?**
+   Linux is an open-source kernel created by Linus Torvalds in 1991. Together with GNU tools and a package manager it forms a distribution such as Ubuntu or RHEL. It is *Unix-like* but not Unix. It is free to use under the GPL licence.
+2. **What are the differences between Linux and Windows?** (a favourite)
+   Linux is open source, mostly command-line driven, case-sensitive, has one filesystem tree, strong file permissions and runs most of the world's servers. Windows is proprietary, GUI-first, has drive letters, and is mainly used on desktops.
+3. **What is the root user? What does `sudo` do?**
+   root is the superuser (UID 0) with full control. `sudo` runs **one command** with root privileges, which is safer than staying logged in as root.
+4. **Explain the Linux directory structure.**
+   Everything is under `/`. `/home` holds user files, `/etc` configuration, `/var/log` logs, `/usr` programs, `/tmp` temporary files, `/bin` and `/sbin` essential commands, `/dev` devices and `/proc` live process information.
+5. **What is the difference between an absolute and a relative path?**
+   Absolute starts at `/` and works from anywhere. Relative starts from the current directory.
+6. **What is the difference between `>` and `>>`?**
+   `>` overwrites the file. `>>` appends to it.
+7. **How do you see hidden files?** `ls -a`.
+8. **What is the difference between `rm` and `rmdir`?**
+   `rm` deletes files (and folders with `-r`). `rmdir` deletes only **empty** folders.
+9. **What is the difference between `cp` and `mv`?**
+   `cp` makes a copy and keeps the original. `mv` moves or renames, so the original is gone.
+10. **What does `ls -l` show? Explain `drwxr-xr-x`.**
+    A long listing. The first character is the type (`d` = directory). The next three groups are owner, group and others: `rwx` = read, write, execute; `r-x` = read and execute.
+11. **What is a shell? Name some shells.**
+    A program that reads commands and passes them to the kernel. bash, sh, zsh and fish are shells.
+12. **What is the difference between `&&` and `;`?**
+    `;` always runs the next command. `&&` runs it only if the previous one succeeded.
+13. **What do `/`, `~` and `/root` mean?** (the classic confusion)
+    `/` is the root **directory** (top of the tree). `~` is your **home** directory. `/root` is the home directory of the **root user**. "root" has three different meanings, so listen carefully to the question.
+14. **What does `cd` do with no arguments?** It goes to your home directory.
+15. **Why is Linux preferred for servers?**
+    Stable, secure, free, lightweight, easy to automate from the command line, and the standard for cloud and containers.
+
+## 15. Expected hands-on practice (type these in your Ubuntu)
+
+1. Create `company/{hr,tech,sales}` with **one** command and list it.
+2. Inside `tech`, create `team1.txt` containing "DevOps team", then add the line "Cloud team" without erasing the first one. Show the file.
+3. Copy `team1.txt` into `hr` as `copy.txt`, then rename `copy.txt` to `staff.txt`.
+4. Show the hidden files in your home directory. Name two that you see.
+5. Print your user name, hostname and kernel name in **one line** using `;`.
+6. Delete the empty `sales` folder safely.
+7. Use `&&` to create a folder `backup` and, only if that succeeded, create `a.txt` inside it.
+8. Without using `cd`, list `/etc` in long format.
+9. From any folder, go home, and then jump back to the previous folder, with one command each.
+10. What does the command `cd` do when you type nothing after it? Prove it.
+
+**Answers and solutions:** I'll explain after you try them, and add them here.
