@@ -136,3 +136,63 @@ A candidate gets 45% of the votes in a two-candidate election and loses by 400 v
 
 ---
 
+## 16. Extra rules (so nothing is missed)
+
+| Rule | Formula | Example |
+|---|---|---|
+| Up x%, then down x% | net change = -x^2 / 100 % | 10% -> -1%; 20% -> -4%; 30% -> -9% |
+| Price rises x%, keep spending the same | cut consumption by x/(100+x) x 100 % | Price +50% -> cut by 33 1/3% |
+| Price falls x%, keep spending the same | raise consumption by x/(100-x) x 100 % | Price -20% -> raise by 25% |
+| Chain: A is x% of B, B is y% of C | A is (x x y)/100 % of C | A is 20% of B, B is 50% of C -> A is 10% of C |
+| A is x% of B | A : B = x : 100 | A is 40% of B -> A : B = 2 : 5 |
+| x% of A = y% of B | A : B = y : x | 15% of A = 25% of B -> A : B = 5 : 3 |
+| Product changes (area = length x breadth) | a + b + ab/100 | Length +10%, breadth +10% -> +21% |
+| Two groups (Venn) | Both = A + B - Union; Neither = 100 - Union | |
+| Mixtures where one part stays fixed | new total = fixed quantity / new fraction | |
+| Pass/fail marks | difference in % of max = difference in marks | |
+
+## 17. Question types that repeat in campus tests
+
+> Honest note: companies change their papers every year, and I can't see their current question banks. These are the patterns that appear again and again in the numerical sections of TCS NQT, Infosys, Wipro, Accenture, Cognizant and Capgemini style tests. If you can solve every type below in under 90 seconds, you are covered for percentages.
+
+| # | Type | Typical wording | Key idea |
+|---|---|---|---|
+| 1 | Successive change | "price rises a%, then b%..." | multiply the factors |
+| 2 | Consumption vs price | "reduce consumption so expenditure stays the same" | x/(100+x) rule |
+| 3 | Income, expense, savings | "spends 70% of income; income and expense both rise..." | assume income = 100 |
+| 4 | Elections | "winner gets x% and wins by N votes" | margin = (2x - 100)% of total |
+| 5 | Pass/fail marks | "fails by 15 marks... another passes by 25 marks" | % difference = marks difference |
+| 6 | More/less than | "A is x% more than B; B is what % less than A?" | assume B = 100 |
+| 7 | Area/product change | "length +a%, breadth -b%" | a + b + ab/100 |
+| 8 | Equal percentages | "x% of A = y% of B" | A : B = y : x |
+| 9 | Venn percentages | "passed in both subjects..." | A + B - Both |
+| 10 | Mixture concentration | "water is 20% of 40 litres..." | the pure part stays constant |
+| 11 | Growth over years | "population grows r% a year for n years" | P (1 + r/100)^n |
+
+## Set A: your first practice (do this first; paper only, no calculator). Send me answers + working.
+
+1. What is 35% of 240?
+2. A number increased by 25% becomes 150. What is the number?
+3. A student scores 360 out of 600. What percentage is that?
+4. A phone's price drops from Rs. 20,000 to Rs. 17,000. What is the percentage decrease?
+5. In a class of 50, 40% are girls. How many are boys?
+6. A's salary is 25% more than B's. By what percent is B's salary less than A's?
+
+## Set B: expected practice (company-style; do after Set A, over the next day)
+
+1. A price is increased by 20% and then by another 25%. What is the net increase?
+2. The price of sugar rises by 25%. By what percent must a family cut its consumption to keep the same expenditure?
+3. The length of a rectangle increases by 20% and its breadth decreases by 10%. What is the change in area?
+4. In an election between two candidates, the winner gets 60% of the valid votes and wins by 1,200 votes. How many valid votes were cast?
+5. A student gets 30% marks and fails by 15 marks. Another student gets 40% and passes by 25 marks. Find the maximum marks and the pass marks.
+6. A person spends 70% of his income. His income rises by 20% and his expenditure rises by 10%. By what percent do his savings rise?
+7. If 20% of A equals 30% of B, find A : B.
+8. A town has 20,000 people. The population rises 10% in the first year and falls 10% in the second. What is the population after 2 years?
+9. In an exam, 80% passed in English, 70% passed in Maths and 60% passed in both. What percent failed in both subjects?
+10. A shopkeeper marks goods 40% above cost price and then gives a 25% discount on the marked price. What is his profit or loss percent?
+11. A 40-litre mixture of milk and water has 20% water. How many litres of milk must be added so that water becomes 16%?
+12. A number is increased by 10% and then decreased by 10%. The result is 4,950. What is the original number?
+
+**Answers and full solutions:** I will explain each one after you attempt them, and add them to this file under "Solutions".
+
+Next: after you answer Set A, I'll explain each solution and mark where you lost marks.
