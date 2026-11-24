@@ -64,3 +64,58 @@ Also: use **active voice** ("Our project won a gold medal") and show qualities t
 
 **Useful bridge phrases** (use sparingly): "That's a good question." / "Let me think for a moment." / "To give you an example..." / "In my experience..."
 
+## 6. The most repeated HR questions (campus and off-campus)
+
+> Honest note: these are patterns that repeat in HR rounds across service companies and consulting firms. They are not an exact list of any company's questions.
+
+| # | Question | What the interviewer wants | Answer framework |
+|---|---|---|---|
+| 1 | Tell me about yourself | Clarity and fit | Present -> proof -> skills -> future |
+| 2 | What are your strengths? | Relevant, proven strengths | Strength + one example |
+| 3 | What are your weaknesses? | Self-awareness | Real but fixable weakness + what you are doing about it |
+| 4 | Why do you want to join our company? | You researched | Company strength + your skill match |
+| 5 | Why should we hire you? | Value to them | Skills + proof + attitude |
+| 6 | Where do you see yourself in 5 years? | Ambition and stability | Skill growth in the same field |
+| 7 | Tell me about your project and your role | Real contribution | Problem -> your part -> result |
+| 8 | Are you willing to relocate or work in shifts? | Flexibility | Honest, positive answer |
+| 9 | Tell me about a challenge you solved | Problem-solving | **STAR** |
+| 10 | Tell me about teamwork or a conflict | Collaboration | **STAR** |
+| 11 | Why system engineer / cloud, not development? | Genuine motivation for an infrastructure-style role | See model below |
+| 12 | Do you have questions for us? | Interest | Ask about team, training, growth |
+| 13 | What do you know about our company? | Preparation | 3 facts about the company |
+| 14 | Describe yourself in three words | Self-image | Three traits + one-line proof each |
+
+### STAR method (for questions 9 and 10)
+- **S**ituation: the context in one sentence.
+- **T**ask: what you had to do.
+- **A**ction: what **you** did (use "I", not "we").
+- **R**esult: the outcome, with numbers if you can.
+
+### Model answer framework for question 11
+"I enjoy building and running the systems that keep applications reliable, not only writing application code. In my projects I saw that a good idea only works when it is deployed, monitored and kept running. That interested me in Linux, cloud and automation, and I'm now learning these hands-on. A system engineer role lets me work on exactly this."
+
+Make it true: only claim what you can demonstrate in an interview.
+
+### Model answer framework for question 3 (weakness)
+Pick a real, non-critical weakness and show you are fixing it. Structure: "I used to [weakness]. I noticed it when [situation]. I'm working on it by [action], and now [progress]."
+
+Example: "I used to spend too long perfecting small details and sometimes missed deadlines. I noticed it during a group project. Now I set a time limit for each task and review at the end, and I deliver on time."
+
+Avoid fake weaknesses ("I work too hard") and weaknesses that disqualify you for the role.
+
+## 7. Practice (30 minutes)
+
+1. Fill in the template above and read it aloud 3 times. After each take, count the fillers.
+2. Write 4 to 5 sentences each for questions **2, 3 and 11**.
+3. Read one editorial and write 5 new words, each with your own sentence.
+
+## 8. Expected practice questions (answer aloud, then write)
+
+1. Tell me about yourself.
+2. What is your biggest strength? Give one example.
+3. What is your biggest weakness? What are you doing about it?
+4. Why do you want to be a system engineer or cloud engineer?
+5. Tell me about your role in your best project.
+6. Describe a challenge in one of your projects and how you solved it (use STAR).
+7. Where do you see yourself in five years?
+8. Are you comfortable with night shifts and relocation?
